@@ -1,7 +1,7 @@
 import arcade
 
-WIDTH = 600
-HEIGHT = 800
+HEIGHT = 600
+WIDTH = 800
 TITLE_WINDOW = 'Test'
 
 
