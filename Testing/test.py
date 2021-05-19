@@ -4,4 +4,7 @@ print('Another string')
 
 
 def fun():
-    pass
+    return 5 ** 100
+
+
+print(fun())
