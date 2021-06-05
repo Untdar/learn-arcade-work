@@ -5,10 +5,7 @@ WIDTH = 800
 TITLE_WINDOW = 'Test'
 
 
-def main():
-    arcade.open_window(WIDTH, HEIGHT, TITLE_WINDOW)
-    arcade.set_background_color(arcade.csscolor.AQUAMARINE)
-    arcade.start_render()
+def draw_forest():
     arcade.draw_lrtb_rectangle_filled(0, 799, 300, 0, arcade.csscolor.DARK_GREEN)
     # Draw rectangle tree
     arcade.draw_lrtb_rectangle_filled(100, 120, 400, 300, arcade.csscolor.BROWN)  # Draw trunk of tree
@@ -33,6 +30,13 @@ def main():
                                 (760, 400),
                                 (750, 470)),
                                arcade.csscolor.DARK_GREEN)  # Draw polygonal crown of tree
+
+
+def main():
+    arcade.open_window(WIDTH, HEIGHT, TITLE_WINDOW)
+    arcade.set_background_color(arcade.csscolor.AQUAMARINE)
+    arcade.start_render()
+    draw_forest()
     arcade.finish_render()
     arcade.run()
 
